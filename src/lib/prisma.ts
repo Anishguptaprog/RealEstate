@@ -1,4 +1,5 @@
 // import { Prisma } from "@prisma/client";
+
 import { PrismaClient } from "@prisma/client";
 
 const gPrisma = global as unknown as {prisma: PrismaClient};
