@@ -15,6 +15,6 @@ model User{
   firstName String
   lastName String
   email String
-  avatarUrl String
+  avatarUrl String?
   createdAt DateTime @default(now())
 }
