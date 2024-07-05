@@ -20,7 +20,7 @@ const ProfilePage = async () => {
             <div className='flex flex-col items-center'>
                 <Avatar className='w-20 h-20'
                 src={dbUser?.avatarUrl ?? "/profile.png"}/>
-                <UploadAvatar/>
+                <UploadAvatar userId={dbUser?.id!}/>
             </div>
             </div>
 

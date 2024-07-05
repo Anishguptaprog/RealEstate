@@ -14,6 +14,7 @@
     "@nextui-org/navbar": "^2.0.32",
     "@nextui-org/react": "^2.4.1",
     "@prisma/client": "^5.15.0",
+    "@supabase/supabase-js": "^2.44.2",
     "framer-motion": "^11.2.10",
     "label": "^0.2.2",
     "next": "14.2.3",
