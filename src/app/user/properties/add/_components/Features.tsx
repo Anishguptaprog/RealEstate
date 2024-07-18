@@ -35,7 +35,7 @@ const Features = (props: Props) => {
         errorMessage={errors.propertyFeature?.bedrooms?.message}
         isInvalid={!!errors.propertyFeature?.bedrooms}
         label="Bedrooms"
-        defaultValue={getValues().propertyFeature.bedrooms.toString()}
+       // defaultValue={getValues().propertyFeature.bedrooms.toString()}
       />
 
       <Input
@@ -43,14 +43,14 @@ const Features = (props: Props) => {
         errorMessage={errors.propertyFeature?.bathrooms?.message}
         isInvalid={!!errors.propertyFeature?.bathrooms}
         label="Bathrooms"
-        defaultValue={getValues().propertyFeature.bathrooms.toString()}
+       //  defaultValue={getValues().propertyFeature.bathrooms.toString()}
       />
       <Input
         {...register("propertyFeature.parkingSpots")}
         errorMessage={errors.propertyFeature?.parkingSpots?.message}
         isInvalid={!!errors.propertyFeature?.parkingSpots}
         label="Parking Spots"
-        defaultValue={getValues().propertyFeature.parkingSpots.toString()}
+       //  defaultValue={getValues().propertyFeature.parkingSpots.toString()}
       />
 
       <Input
@@ -58,7 +58,7 @@ const Features = (props: Props) => {
         errorMessage={errors.propertyFeature?.area?.message}
         isInvalid={!!errors.propertyFeature?.area}
         label="Area"
-        defaultValue={getValues().propertyFeature.area.toString()}
+       // defaultValue={getValues().propertyFeature.area.toString()}
       />
       <div className="flex items-center justify-between ">
         <Controller
@@ -68,7 +68,7 @@ const Features = (props: Props) => {
             <Checkbox
               onChange={field.onChange}
               onBlur={field.onBlur}
-              defaultValue={getValues().propertyFeature.hasSwimmingPool ? "true" : "false"}
+             // defaultValue={getValues().propertyFeature.hasSwimmingPool ? "true" : "false"}
             >
               Has Swimming Pool
             </Checkbox>
@@ -82,7 +82,7 @@ const Features = (props: Props) => {
             <Checkbox
               onChange={field.onChange}
               onBlur={field.onBlur}
-              defaultValue={getValues().propertyFeature.hasGardenYard ? "true" : "false"}
+              // defaultValue={getValues().propertyFeature.hasGardenYard ? "true" : "false"}
             >
               Has Gard/Yard
             </Checkbox>
@@ -96,7 +96,7 @@ const Features = (props: Props) => {
             <Checkbox
               onChange={field.onChange}
               onBlur={field.onBlur}
-              defaultValue={getValues().propertyFeature.hasBalcony ? "true" : "false"}
+             // defaultValue={getValues().propertyFeature.hasBalcony ? "true" : "false"}
             >
               Has Balcony/Patio
             </Checkbox>

@@ -34,6 +34,7 @@ model Property {
   location    PropertyLocation?
   feature     PropertyFeature?
   image       PropertyImage[]
+  contact     Contact?
 }
 
 model PropertyType {
@@ -57,25 +58,34 @@ model PropertyLocation {
   region        String
   landmark      String
   propertyId    Int      @unique
-  property      Property @relation(fields: [propertyId], references: [id])
+  property      Property @relation(fields: [propertyId], references: [id], onDelete: Cascade)
 }
 
 model PropertyFeature {
   id              Int      @id @default(autoincrement())
-  beadrooms       Int
+  bedrooms        Int
   bathrooms       Int
-  parking         Int
+  parkingSpots    Int
   area            Int
   hasSwimmingPool Boolean
   hasGardenYard   Boolean
   hasBalcony      Boolean
-  property        Property @relation(fields: [propertyId], references: [id])
+  property        Property @relation(fields: [propertyId], references: [id], onDelete: Cascade)
   propertyId      Int      @unique
 }
 
-model PropertyImage{
-  id Int @id @default(autoincrement())
-  url String
-  property Property @relation(fields: [propertyId],references: [id])
-  propertyId Int
+model PropertyImage {
+  id         Int      @id @default(autoincrement())
+  url        String
+  property   Property @relation(fields: [propertyId], references: [id], onDelete: Cascade)
+  propertyId Int      @unique
+}
+
+model Contact {
+  id         Int      @id @default(autoincrement())
+  name       String
+  phone      String
+  email      String
+  property   Property @relation(fields: [propertyId], references: [id], onDelete: Cascade)
+  propertyId Int      @unique
 }
