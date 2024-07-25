@@ -5,5 +5,5 @@ export default function middleware(req : any){
 }
 
 export const config = {
-    matcher : ["/user/profile"],
+    matcher : ["/user/:path*"],
 };

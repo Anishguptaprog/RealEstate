@@ -5,7 +5,7 @@ import { Providers } from "./components/provider";
 import Nav from "./components/Nav";
 import SignIn from "./components/SignIn";
 import { ToastContainer } from "react-toastify";
-import 'react-toastify/dist/ReactToastify.css';
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
