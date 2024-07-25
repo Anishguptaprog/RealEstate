@@ -3,6 +3,7 @@ import Link from 'next/link';
 import React, { ReactNode } from 'react'
 interface Props{
     children: ReactNode;
+    
 }
 
 const PropertiesLayout = ({children}:Props) => {
@@ -13,6 +14,7 @@ const PropertiesLayout = ({children}:Props) => {
             <Button color='secondary'><Link href="/user/properties/add">Add Property</Link></Button>
         </div>
         {children}
+        {/* {modalDelete} */}
     </div>
   )
 }
