@@ -89,3 +89,12 @@ model Contact {
   property   Property @relation(fields: [propertyId], references: [id], onDelete: Cascade)
   propertyId Int      @unique
 }
+
+model SubscriptionPlan {
+  id                    Int    @id @default(autoincrement())
+  name                  String
+  price                 Float
+  propertyLimit         Int
+  imagePerPropertyLimit Int
+  features              String
+}
