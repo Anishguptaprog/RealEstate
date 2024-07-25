@@ -1,3 +1,4 @@
+"use client"
 import { saveSubscription } from "@/lib/actions/subscription";
 import { useKindeBrowserClient } from "@kinde-oss/kinde-auth-nextjs";
 import { Button, Modal, ModalBody, ModalContent, ModalHeader } from "@nextui-org/react";

@@ -1,3 +1,4 @@
+
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/16/solid";
 import { Button, Card, Input, Select, SelectItem, Textarea, cn } from "@nextui-org/react";
 import { PropertyStatus, PropertyType } from "@prisma/client";
